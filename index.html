@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RED Centro de Beleza · Cabelo e unhas no Centro de Florianópolis</title>
+<meta name="description" content="Salão especialista em unhas e cabelo no Centro de Florianópolis: corte, coloração, mechas, manicure, alongamento, sobrancelhas, cílios, depilação e estética. Rua Jerônimo Coelho, 185, subsolo. Agende pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RED Centro de Beleza">
+<meta property="og:description" content="Especialistas em unhas e cabelo no Centro de Florianópolis.">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#F1EDE9">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23F1EDE9'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%234A1A1E'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400..600;1,400..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "RED Centro de Beleza",
+  "alternateName": "Red & Cia",
+  "legalName": "Red Centro de Beleza Ltda",
+  "taxID": "59.293.410/0001-10",
+  "description": "Especialistas em unhas e cabelo no Centro de Florianópolis.",
+  "telephone": "+55 48 98870-2122",
+  "image": "fotos/mechas.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Jerônimo Coelho, 185, subsolo",
+    "addressLocality": "Florianópolis",
+    "addressRegion": "SC",
+    "postalCode": "88010-030",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:30", "closes": "19:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:30", "closes": "14:30"}
+  ],
+  "sameAs": ["https://www.instagram.com/red_centrodebeleza/"]
+}
+</script>
+<style>
+:root{
+  --vinho:#4A1A1E;        /* letras do logo */
+  --vinho-fundo:#2A0F12;
+  --po:#F1EDE9;           /* fundo do logo */
+  --blush:#E7D9D3;
+  --nude:#C49890;         /* esmalte nude das fotos */
+  --suave:#6B5956;
+  --linha:rgba(74,26,30,.16);
+  --serif:"Playfair Display", Georgia, serif;
+  --sans:"Albert Sans", system-ui, sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --gutter:clamp(16px, 5vw, 72px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--po);color:var(--vinho);font:300 1.0625rem/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--vinho);outline-offset:4px;border-radius:2px}
+h1,h2,h3{margin:0;font-weight:400}
+em{font-style:italic}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:20;display:flex;align-items:center;gap:2rem;padding:18px var(--gutter);transition:background .6s var(--ease),box-shadow .6s var(--ease),padding .6s var(--ease)}
+.nav.is-solid{background:rgba(241,237,233,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--linha);padding-block:12px}
+.nav-logo{font:500 1.5rem/1 var(--serif);letter-spacing:.06em;text-decoration:none;margin-right:auto}
+.nav nav{display:flex;gap:2rem}
+.nav nav a{font-size:.9rem;font-weight:400;text-decoration:none;letter-spacing:.02em;position:relative}
+.nav nav a::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.nav nav a:hover::after{transform:scaleX(1);transform-origin:left}
+
+.btn{display:inline-flex;align-items:center;gap:.6em;background:var(--vinho);color:var(--po);text-decoration:none;font:500 .95rem/1 var(--sans);letter-spacing:.02em;padding:1.05rem 1.7rem;border-radius:999px;transition:background .5s var(--ease),transform .5s var(--ease)}
+.btn:hover{background:var(--vinho-fundo);transform:translateY(-2px)}
+.btn-sm{padding:.75rem 1.2rem;font-size:.875rem}
+.btn-light{background:var(--po);color:var(--vinho)}
+.btn-light:hover{background:var(--blush)}
+.link{font-weight:400;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.3em;transition:text-underline-offset .4s var(--ease)}
+.link:hover{text-underline-offset:.5em}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;place-items:center;padding:110px var(--gutter) 80px;overflow:clip}
+.hero-txt{position:relative;z-index:2;text-align:center}
+.wordmark{display:flex;flex-direction:column;align-items:center}
+.wm-red{display:flex;font:400 clamp(7rem, 23vw, 21rem)/.82 var(--serif);letter-spacing:.01em;overflow:hidden;padding-top:.06em}
+.wm-red span{display:block}
+.wm-sub{font:500 clamp(.95rem, 1.7vw, 1.4rem)/1 var(--serif);letter-spacing:.42em;margin:.9em 0 0 .42em}
+.hero-lede{margin:2.2rem auto 0;max-width:30ch;font-size:clamp(1.05rem,1.4vw,1.2rem);color:var(--suave)}
+.hero-cta{margin-top:2rem;display:flex;flex-wrap:wrap;gap:1rem 1.6rem;align-items:center;justify-content:center}
+.rating{font-size:.9rem;font-weight:400;text-decoration:none;color:var(--suave)}
+.rating b{font-weight:500;color:var(--vinho)}
+.rating:hover{color:var(--vinho)}
+
+.hp{position:absolute;margin:0;z-index:1;will-change:transform}
+.hp img{width:100%;height:100%;object-fit:cover}
+.hp-arch{aspect-ratio:3/4;border-radius:999px 999px 6px 6px;overflow:hidden}
+.hp-oval{aspect-ratio:16/10;border-radius:999px;overflow:hidden}
+.hp-a{left:6vw;top:17%;width:clamp(150px,16vw,250px)}
+.hp-b{right:6vw;top:11%;width:clamp(140px,14vw,220px)}
+.hp-b img{object-position:72% center}
+.hp-c{right:9vw;bottom:11%;width:clamp(160px,17vw,260px)}
+.hp-d{left:15vw;bottom:7%;width:clamp(110px,10vw,170px)}
+
+/* entrada da página: as letras sobem, as fotos assentam */
+.js .wm-red span{transform:translateY(105%);animation:sobe 1.5s var(--ease) forwards}
+.js .wm-red span:nth-child(2){animation-delay:.12s}
+.js .wm-red span:nth-child(3){animation-delay:.24s}
+.js .wm-sub,.js .hero-lede,.js .hero-cta{opacity:0;animation:aparece 1.4s var(--ease) forwards}
+.js .wm-sub{animation-delay:.7s}
+.js .hero-lede{animation-delay:.85s}
+.js .hero-cta{animation-delay:1s}
+.js .hp img{opacity:0;transform:scale(1.12);animation:assenta 2s var(--ease) forwards}
+.js .hp-b img{animation-delay:.25s}
+.js .hp-c img{animation-delay:.45s}
+.js .hp-d img{animation-delay:.6s}
+@keyframes sobe{to{transform:none}}
+@keyframes aparece{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes assenta{to{opacity:1;transform:none}}
+
+/* revelação ao rolar */
+.js .rv{opacity:0;transform:translateY(32px);transition:opacity 1.3s var(--ease),transform 1.5s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+
+section{padding:clamp(96px,13vw,190px) var(--gutter)}
+
+/* intro */
+.intro{text-align:center;padding-block:clamp(40px,6vw,96px)}
+.statement{font:400 clamp(1.9rem,5.6vw,5.2rem)/1.04 var(--serif);letter-spacing:-.01em;margin:0 auto}
+.statement em{font-weight:400}
+.intro-txt{max-width:84ch;margin:2.2rem auto 0;color:var(--suave);font-size:clamp(1.05rem,1.3vw,1.15rem);text-wrap:balance}
+
+/* cabeçalhos de seção */
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:1rem 3rem;margin-bottom:clamp(40px,6vw,80px)}
+.sec-title{font:400 clamp(2.6rem,6vw,5rem)/1 var(--serif);letter-spacing:-.01em}
+.sec-note{margin:0;max-width:34ch;color:var(--suave)}
+
+/* serviços */
+.servicos{background:var(--blush)}
+.svc-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--linha)}
+.svc{border-bottom:1px solid var(--linha)}
+.svc a{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:1rem 3rem;align-items:center;padding:clamp(22px,3vw,38px) 0;text-decoration:none}
+.svc-name{font:400 clamp(1.9rem,3.8vw,3.3rem)/1.05 var(--serif);transition:transform .7s var(--ease),font-style 0s}
+.svc-desc{color:var(--suave)}
+.svc-go{font-size:.9rem;font-weight:400;white-space:nowrap;opacity:.8;transition:opacity .5s var(--ease)}
+.svc-go span{display:inline-block;transition:transform .5s var(--ease)}
+.svc a:hover .svc-name,.svc a:focus-visible .svc-name{font-style:italic;transform:translateX(14px)}
+.svc a:hover .svc-go,.svc a:focus-visible .svc-go{opacity:1}
+.svc a:hover .svc-go span{transform:translateX(5px)}
+
+/* resultados: as fotos lado a lado como mechas numa cartela de cores */
+.cartela{display:flex;gap:8px;height:clamp(440px,74vh,680px)}
+.lock{position:relative;flex:1 1 0;min-width:0;margin:0;overflow:hidden;border-radius:4px;cursor:pointer;transition:flex-grow 1.1s var(--ease),clip-path 1.6s cubic-bezier(.65,0,.35,1);transition-delay:0s,calc(var(--i) * 90ms)}
+.lock img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease),filter 1s var(--ease);filter:saturate(.85)}
+.lock::after{content:"";position:absolute;inset:auto 0 0;height:45%;background:linear-gradient(to top,rgba(42,15,18,.55),transparent);pointer-events:none}
+.lock figcaption{position:absolute;left:14px;bottom:18px;z-index:1;color:var(--po);font:400 1.05rem/1 var(--serif);letter-spacing:.06em;writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap}
+.lock.is-open,.lock:hover,.lock:focus{flex-grow:5}
+.cartela:hover .lock.is-open:not(:hover),.cartela:focus-within .lock.is-open:not(:focus){flex-grow:1}
+.lock:hover img,.lock:focus img,.lock.is-open img{filter:none}
+.cartela:hover .lock.is-open:not(:hover) img{filter:saturate(.85)}
+.lock:hover img{transform:scale(1.03)}
+.js .cartela .lock{clip-path:inset(100% 0 0 0)}
+.js .cartela.in .lock{clip-path:inset(0 0 0 0)}
+
+.ad{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:clamp(16px,2.4vw,32px);align-items:end;margin-top:clamp(64px,8vw,120px)}
+.ad figure{margin:0}
+.ad img{border-radius:4px;width:100%}
+.ad figcaption{margin-top:.8rem;font-size:.9rem;color:var(--suave)}
+.ad figcaption b{font-weight:500;color:var(--vinho)}
+.ad-txt h3{font:400 clamp(2rem,3.4vw,3rem)/1.05 var(--serif);margin-bottom:1rem}
+.ad-txt h3 em{display:block}
+.ad-txt p{margin:0 0 1.4rem;color:var(--suave);max-width:32ch}
+
+/* visite */
+.visite{background:var(--vinho-fundo);color:var(--po);display:grid;grid-template-columns:minmax(0,480px) minmax(0,380px);justify-content:center;gap:clamp(40px,7vw,110px);align-items:center;padding-block:clamp(64px,8vw,112px)}
+.visite .sec-title{font-size:clamp(2.2rem,4vw,3.4rem);margin-bottom:1.6rem}
+.visite address{font-style:normal;font-size:1.05rem;line-height:1.6}
+.horas{margin:1.5rem 0;padding:0;display:grid;gap:.4rem;max-width:360px}
+.horas div{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid rgba(241,237,233,.14);padding-bottom:.5rem}
+.horas dt{color:rgba(241,237,233,.72)}
+.horas dd{margin:0}
+.contatos{margin:0 0 .6rem}
+.contatos a{text-decoration:none}
+.contatos a:hover{text-decoration:underline;text-underline-offset:.3em}
+.visite .rating{color:rgba(241,237,233,.72)}
+.visite .rating b{color:var(--po)}
+.cta-row{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:1rem 1.8rem;align-items:center}
+.mapa{aspect-ratio:4/5;border-radius:999px 999px 6px 6px;overflow:hidden;background:#3a1a1d}
+/* iframe sobe 140px para o cartão do Google não ser cortado pelo arco; créditos do mapa seguem embaixo */
+.mapa iframe{width:100%;height:calc(100% + 140px);margin-top:-140px;border:0;filter:grayscale(1) sepia(.25) contrast(.95)}
+
+footer{background:var(--vinho-fundo);color:rgba(241,237,233,.62);padding:28px var(--gutter) 36px;display:flex;flex-wrap:wrap;gap:.6rem 2rem;justify-content:space-between;font-size:.82rem;border-top:1px solid rgba(241,237,233,.12)}
+footer strong{font:500 1rem/1 var(--serif);letter-spacing:.06em;color:var(--po)}
+
+.so-mob{display:none}
+
+/* celular */
+@media (max-width:760px){
+  .so-desk{display:none}
+  .so-mob{display:inline}
+  .nav{gap:1rem}
+  .nav nav{display:none}
+  .hero{padding-top:96px;align-items:center}
+  .wm-red{font-size:31vw}
+  .wm-sub{letter-spacing:.32em;margin-left:.32em}
+  .hero-lede{margin-top:1.6rem}
+  .hero-cta{flex-direction:column;gap:1rem}
+  .hp-a{left:5vw;top:11%;width:29vw}
+  .hp-b{right:6vw;top:8%;width:25vw}
+  .hp-c{right:6vw;bottom:4%;width:33vw}
+  .hp-d{left:7vw;bottom:5%;width:20vw}
+  .svc a{grid-template-columns:1fr auto;gap:.4rem 1rem}
+  .svc-desc{grid-column:1 / -1;grid-row:2}
+  .cartela{height:auto;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);scrollbar-width:none}
+  .cartela::-webkit-scrollbar{display:none}
+  .lock,.lock.is-open,.lock:hover,.lock:focus,.cartela:hover .lock.is-open:not(:hover){flex:0 0 68vw;height:88vw;scroll-snap-align:center}
+  .lock img{filter:none}
+  .ad{grid-template-columns:1fr 1fr}
+  .ad-txt{grid-column:1 / -1;grid-row:1}
+  .visite{grid-template-columns:1fr}
+  .mapa{aspect-ratio:4/3}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv,.js .wm-red span,.js .wm-sub,.js .hero-lede,.js .hero-cta,.js .hp img{opacity:1;transform:none;animation:none;transition:none}
+  .js .cartela .lock{clip-path:none}
+  .lock,.lock img{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav-logo" href="#inicio" aria-label="RED Centro de Beleza, voltar ao início">RED</a>
+  <nav aria-label="Seções">
+    <a href="#servicos">Serviços</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#visite">Visite</a>
+  </nav>
+  <a class="btn btn-sm" href="https://wa.me/5548988702122?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20RED." target="_blank" rel="noopener">Agendar</a>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <figure class="hp hp-arch hp-a" data-speed="-.14"><img src="fotos/mechas.jpg" width="386" height="640" alt="Cliente de perfil com mechas loiras em cabelo longo e ondulado"></figure>
+    <figure class="hp hp-arch hp-b" data-speed=".16"><img src="fotos/platinado.jpg" width="518" height="505" alt="Cliente com corte chanel em loiro platinado"></figure>
+    <figure class="hp hp-oval hp-c" data-speed="-.26"><img src="fotos/unhas.jpg" width="372" height="215" alt="Unhas curtas esmaltadas em nude rosado"></figure>
+    <figure class="hp hp-arch hp-d" data-speed=".22"><img src="fotos/cor-fantasia.jpg" width="372" height="640" alt="Cliente com cabelo rosa e franja"></figure>
+
+    <div class="hero-txt">
+      <h1 class="wordmark" aria-label="RED Centro de Beleza">
+        <span class="wm-red" aria-hidden="true"><span>R</span><span>E</span><span>D</span></span>
+        <span class="wm-sub" aria-hidden="true">Centro de Beleza</span>
+      </h1>
+      <p class="hero-lede">Especialistas em unhas e cabelo, no Centro de Florianópolis.</p>
+      <div class="hero-cta">
+        <a class="btn" href="https://wa.me/5548988702122?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20RED." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        <a class="rating" href="https://maps.app.goo.gl/6G4iTqFHoJy3n42s9" target="_blank" rel="noopener"><b>★ 4,9</b> no Google · 607 avaliações</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <h2 class="statement rv">Beleza que valoriza<br><em>sua autoestima.</em></h2>
+    <p class="intro-txt rv">No subsolo do número 185 da Rua Jerônimo Coelho, cuidamos de cabelo, unhas, sobrancelhas, cílios, depilação e estética. Tudo num só lugar e com hora marcada.</p>
+  </section>
+
+  <section class="servicos" id="servicos">
+    <div class="sec-head">
+      <h2 class="sec-title rv">Serviços</h2>
+      <p class="sec-note rv">Toque num serviço para agendar direto pelo WhatsApp.</p>
+    </div>
+    <ul class="svc-list">
+      <li class="svc rv"><a href="https://wa.me/5548988702122?text=Ol%C3%A1!%20Gostaria%20de%20agendar%3A%20Cabelo" target="_blank" rel="noopener">
+        <span class="svc-name">Cabelo</span>
+        <span class="svc-desc">Corte, coloração, mechas, cor fantasia e tratamentos.</span>
+        <span class="svc-go">Agendar <span aria-hidden="true">→</span></span></a></li>
+      <li class="svc rv"><a href="https://wa.me/5548988702122?text=Ol%C3%A1!%20Gostaria%20de%20agendar%3A%20Unhas" target="_blank" rel="noopener">
+        <span class="svc-name">Unhas</span>
+        <span class="svc-desc">Manicure, pedicure, esmaltação em gel e alongamento.</span>
+        <span class="svc-go">Agendar <span aria-hidden="true">→</span></span></a></li>
+      <li class="svc rv"><a href="https://wa.me/5548988702122?text=Ol%C3%A1!%20Gostaria%20de%20agendar%3A%20Sobrancelhas%20e%20c%C3%ADlios" target="_blank" rel="noopener">
+        <span class="svc-name">Sobrancelhas e cílios</span>
+        <span class="svc-desc">Design de sobrancelhas e cuidado com os cílios.</span>
+        <span class="svc-go">Agendar <span aria-hidden="true">→</span></span></a></li>
+      <li class="svc rv"><a href="https://wa.me/5548988702122?text=Ol%C3%A1!%20Gostaria%20de%20agendar%3A%20Depila%C3%A7%C3%A3o" target="_blank" rel="noopener">
+        <span class="svc-name">Depilação</span>
+        <span class="svc-desc">Rosto e corpo.</span>
+        <span class="svc-go">Agendar <span aria-hidden="true">→</span></span></a></li>
+      <li class="svc rv"><a href="https://wa.me/5548988702122?text=Ol%C3%A1!%20Gostaria%20de%20agendar%3A%20Est%C3%A9tica%20e%20maquiagem" target="_blank" rel="noopener">
+        <span class="svc-name">Estética e maquiagem</span>
+        <span class="svc-desc">Cuidados estéticos e maquiagem para o dia a dia ou para eventos.</span>
+        <span class="svc-go">Agendar <span aria-hidden="true">→</span></span></a></li>
+    </ul>
+  </section>
+
+  <section class="resultados" id="resultados">
+    <div class="sec-head">
+      <h2 class="sec-title rv">Resultados</h2>
+      <p class="sec-note rv">Clientes reais, direto do nosso Instagram. <span class="so-desk">Passe o mouse sobre uma foto para ver inteira.</span><span class="so-mob">Deslize para o lado para ver mais.</span></p>
+    </div>
+
+    <div class="cartela">
+      <figure class="lock is-open" tabindex="0" style="--i:0"><img src="fotos/mechas.jpg" width="386" height="640" loading="lazy" alt="Mechas loiras em cabelo longo e ondulado"><figcaption>Mechas</figcaption></figure>
+      <figure class="lock" tabindex="0" style="--i:1"><img src="fotos/corte-e-cor.jpg" width="372" height="640" loading="lazy" alt="Corte em camadas com coloração loiro mel, visto de lado"><figcaption>Corte e cor</figcaption></figure>
+      <figure class="lock" tabindex="0" style="--i:2"><img src="fotos/platinado.jpg" width="518" height="505" loading="lazy" alt="Chanel em loiro platinado"><figcaption>Platinado</figcaption></figure>
+      <figure class="lock" tabindex="0" style="--i:3"><img src="fotos/cor-fantasia.jpg" width="372" height="640" loading="lazy" alt="Cabelo rosa com franja e camadas"><figcaption>Cor fantasia</figcaption></figure>
+      <figure class="lock" tabindex="0" style="--i:4"><img src="fotos/corte-com-franja.jpg" width="518" height="505" loading="lazy" alt="Cliente sorrindo com corte com franja, ao lado da cabeleireira"><figcaption>Corte com franja</figcaption></figure>
+      <figure class="lock" tabindex="0" style="--i:5"><img src="fotos/maquiagem.jpg" width="518" height="505" loading="lazy" alt="Maquiagem com sombra lilás e sobrancelhas definidas"><figcaption>Maquiagem</figcaption></figure>
+      <figure class="lock" tabindex="0" style="--i:6"><img src="fotos/maquiagem-2.jpg" width="518" height="505" loading="lazy" alt="Maquiagem com sombra rosada e batom rosa brilhante"><figcaption>Make rosada</figcaption></figure>
+    </div>
+
+    <div class="ad">
+      <div class="ad-txt rv">
+        <h3>Antes <em>e depois</em></h3>
+        <p>Do natural ao acabamento final. Tem muito mais trabalho da equipe no nosso perfil.</p>
+        <a class="link" href="https://www.instagram.com/red_centrodebeleza/" target="_blank" rel="noopener">Ver no Instagram</a>
+      </div>
+      <figure class="rv"><img src="fotos/antes-depois-unhas.jpg" width="518" height="640" loading="lazy" alt="Antes e depois de unhas: naturais e depois esmaltadas em nude rosado"><figcaption><b>Unhas</b> · antes e depois</figcaption></figure>
+      <figure class="rv"><img src="fotos/antes-depois-sobrancelha.jpg" width="518" height="640" loading="lazy" alt="Antes e depois de design de sobrancelhas"><figcaption><b>Sobrancelhas</b> · antes e depois</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="visite" id="visite">
+    <div class="visite-info">
+      <h2 class="sec-title rv">No subsolo<br><em>do 185</em></h2>
+      <address class="rv">Rua Jerônimo Coelho, 185, subsolo<br>Centro, Florianópolis/SC<br>CEP 88010-030</address>
+      <dl class="horas rv">
+        <div><dt>Segunda a sexta</dt><dd>8h30 às 19h</dd></div>
+        <div><dt>Sábado</dt><dd>8h30 às 14h30</dd></div>
+        <div><dt>Domingo</dt><dd>Fechado</dd></div>
+      </dl>
+      <p class="contatos rv"><a href="tel:+5548988702122">(48) 98870-2122</a> · <a href="https://www.instagram.com/red_centrodebeleza/" target="_blank" rel="noopener">@red_centrodebeleza</a></p>
+      <a class="rating rv" href="https://maps.app.goo.gl/6G4iTqFHoJy3n42s9" target="_blank" rel="noopener"><b>★ 4,9</b> no Google · ler as 607 avaliações</a>
+      <div class="cta-row rv">
+        <a class="btn btn-light" href="https://wa.me/5548988702122?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20RED." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        <a class="link" href="https://maps.app.goo.gl/6G4iTqFHoJy3n42s9" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+    </div>
+    <div class="mapa rv">
+      <iframe title="Mapa com a localização da RED Centro de Beleza" src="https://www.google.com/maps?q=Rua+Jer%C3%B4nimo+Coelho,+185,+Centro,+Florian%C3%B3polis+-+SC,+88010-030&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <strong>RED</strong>
+  <span>Red Centro de Beleza Ltda (Red &amp; Cia) · CNPJ 59.293.410/0001-10</span>
+  <span>© 2026</span>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+<script>
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let lenis = null;
+if (!reduce && window.Lenis) {
+  lenis = new Lenis({ lerp: 0.075, wheelMultiplier: 0.9 });
+  const raf = t => { lenis.raf(t); requestAnimationFrame(raf); };
+  requestAnimationFrame(raf);
+  // links internos deslizam pelo Lenis em vez do salto nativo
+  document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+    const alvo = document.querySelector(a.getAttribute('href'));
+    if (!alvo) return;
+    e.preventDefault();
+    lenis.scrollTo(alvo, { offset: a.getAttribute('href') === '#inicio' ? 0 : -72, duration: 1.8 });
+  }));
+}
+
+const nav = document.querySelector('.nav');
+const camadas = reduce ? [] : [...document.querySelectorAll('[data-speed]')];
+const aoRolar = () => {
+  const y = scrollY;
+  nav.classList.toggle('is-solid', y > 40);
+  if (y < innerHeight * 1.3) camadas.forEach(el => { el.style.transform = `translate3d(0, ${y * el.dataset.speed}px, 0)`; });
+};
+addEventListener('scroll', aoRolar, { passive: true });
+aoRolar();
+
+const io = new IntersectionObserver(itens => itens.forEach(i => {
+  if (i.isIntersecting) { i.target.classList.add('in'); io.unobserve(i.target); }
+}), { rootMargin: '0px 0px -12% 0px' });
+document.querySelectorAll('.rv, .cartela').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

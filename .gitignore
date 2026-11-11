@@ -1,0 +1,4 @@
+# config local do preview
+.claude/
+# downloads originais do Instagram (com marca d'água); o site usa as versões recortadas em fotos/
+fotos/ig/
